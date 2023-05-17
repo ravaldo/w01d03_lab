@@ -8,7 +8,7 @@ class TestPythonFunctionPractice(unittest.TestCase):
       return_10_result = return_10()
       self.assertEqual( 10, return_10_result )
 
-  #@unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_add(self):
       add_result = add( 1, 2 )
       self.assertEqual( 3, add_result )
@@ -79,21 +79,22 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_volume_of_cube(self):
-    #add test code here
-    pass
-
+    vol = volume_of_cube(2, 3, 4)
+    self.assertEqual(vol, 24)
+    
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_reverse_string(self):
-    #add test code here
-    pass
+    reversed = reverse_string("Hello World!")
+    self.assertEqual(reversed, "!dlroW olleH")
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+#  @unittest.skip("delete this line to run the test")
   def test_fahrenheit_to_celsius(self):
-    #add test code here
+    c = fahrenheit_to_celsius(68)
+    self.assertEqual(c, 20)
     pass
 
 
